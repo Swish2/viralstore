@@ -1,0 +1,16 @@
+{
+    "name": "buivannguyen/jpreview",
+    "type": "library",
+    "description": "jquery plugin preview image before upload",
+    "keywords": ["preview image","jquery plugin preview"],
+    "homepage": "https://github.com/buivannguyen/jpreview",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Nguyen Bui Van",
+            "email": "toi@buivannguyen.com",
+            "homepage": "http://buivannguyen.com",
+            "role": "Developer"
+        }
+    ]
+}

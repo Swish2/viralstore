@@ -1,0 +1,18 @@
+# Put on the rewrite engine
+RewriteEngine On
+
+Options -ExecCGI
+RewriteCond %{HTTPS} !=on
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301,NE] 
+
+RewriteCond %(REQUEST_FILENAME) !-f
+RewriteCond %(REQUEST_FILENAME) !-d
+
+RewriteRule ^store/([0-9]+)/([a-zA-Z0-9]+)$ view.php?sharer=$1&code=$2 [NC,L]
+RewriteRule ^product$ index.php [NC,L]
+RewriteRule ^login$ login.php [NC,L]
+RewriteRule ^add$ add.php [NC,L]
+RewriteRule ^analytic$ analytic.php [NC,L]
+RewriteRule ^wallet$ wallet.php [NC,L]
+RewriteRule ^account$ account.php [NC,L]
+RewriteRule ^logout$ logout.php [NC,L]

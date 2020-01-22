@@ -4,7 +4,7 @@ class Payment{
     private $url;
     private $db;
     private $acctName = null;
-    private $key ='Bearer sk_live_d22e9807d6bb786e2c3b7fc053f4db9a67c78cd5';
+    private $key ='';
 
     public function __construct($db = null){
         $this->db = $db;
